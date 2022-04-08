@@ -66,7 +66,7 @@ HashMap * createMap(long capacity) {
   //función crea una variable de tipo HashMap, inicializa el arreglo de 
   //buckets con casillas nulas, inicializa el resto de variables y 
   //retorna el mapa. Inicialice el índice current a -1.
-  HashMap* tabla(HashMap*)malloc(sizeof(HashMap));
+  HashMap* tabla(HashMap*)malloc(sizeof(HashMap*));
   for(int i = 0,i<=capacity,i++)
     {
       buckets[i]=NULL;
