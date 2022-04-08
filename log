@@ -706,3 +706,18 @@ hashmap.c:72:15: error: ‘size’ undeclared (first use in this function); did 
 hashmap.c:72:15: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 0b9f389
+Fri Apr  8 15:56:55 UTC 2022: 
+ hashmap.c | 27 +++++++++------------------
+ 1 file changed, 9 insertions(+), 18 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:68:3: error: expected ‘;’ before ‘for’
+   for (i=0;i<=capacity;i++)
+   ^~~
+hashmap.c:74:15: error: ‘size’ undeclared (first use in this function); did you mean ‘sinl’?
+   tabla->size=size;
+               ^~~~
+               sinl
+hashmap.c:74:15: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+fb89f80

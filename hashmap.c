@@ -51,40 +51,30 @@ void enlarge(HashMap * map) {
 }
 
 HashMap * createMap(long capacity) {
-
-
+  
   // struct HashMap {
   //   Pair ** buckets;
   //   long size; //cantidad de datos/pairs en la tabla
   //   long capacity; //capacidad de la tabla
   //   long current; //indice del ultimo dato accedido  
-  // };
 
   //función crea una variable de tipo HashMap, inicializa el arreglo de 
   //buckets con casillas nulas, inicializa el resto de variables y 
   //retorna el mapa. Inicialice el índice current a -1.
   
-  //dentro de la tabla setearla valro
   HashMap* tabla=(HashMap*)malloc(sizeof(HashMap));
-  //recorro el brackets con Null 
-  tabla->buckets = (Pair **) malloc(sizeof(Pair*) * capacity);
+  
+  tabla->buckets = (Pair **) malloc(sizeof(Pair*) * capacity) //creo un arreglo dinamico para tabla 
+  for (i=0;i<=capacity;i++)
+    {
+       buckets[i]=NULL;
+    }
+  
   tabla->capacity=capacity;
   tabla->size=size;
+  tabla->current=-1;
+  
   return tabla;
-  
-    
-  
- //  int buckets[capacity];
- //  int i;
-  
-	// for (i=0;i<=capacity;i++)
- //    {
- //      buckets[i]=NULL;
- //    }
- //  tabla->size=0;
- //  tabla->current=0;
-  
- //  return tabla;
 }
 
 void eraseMap(HashMap * map,  char * key) {    
