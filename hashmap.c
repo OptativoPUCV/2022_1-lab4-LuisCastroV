@@ -65,10 +65,10 @@ HashMap * createMap(long capacity) {
   HashMap* tabla=(HashMap*)malloc(sizeof(HashMap));
   
   tabla->buckets = (Pair **) malloc(sizeof(Pair*) * capacity); //creo un arreglo dinamico para tabla 
-  for (int i=0;i<=capacity;i++)
-    {
-       tabla->buckets[i]=NULL;
-    }
+  // for (int i=0;i<=capacity;i++)
+  //   {
+  //      tabla->buckets[i]=NULL;
+  //   }
   
   tabla->capacity=capacity;
   tabla->size=0;
