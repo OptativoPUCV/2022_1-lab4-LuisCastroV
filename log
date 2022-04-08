@@ -804,3 +804,19 @@ Fri Apr  8 16:06:07 UTC 2022:
  tests:  1|5
 total_score: 10/70
 822c0ef
+Fri Apr  8 16:16:57 UTC 2022: 
+ hashmap.c | 18 +++++++++++++++++-
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:85:12: error: array subscript is not an integer
+   while(map[key]!=NULL)
+            ^
+hashmap.c:87:13: error: array subscript is not an integer
+       if(map[key] == key)
+             ^
+hashmap.c:88:19: error: array subscript is not an integer
+         return map[key];
+                   ^
+Compilation failed
+3784a00
