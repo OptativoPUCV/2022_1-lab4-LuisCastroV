@@ -2,3 +2,20 @@ Fri Apr  8 15:08:47 UTC 2022:
  tests:  0|6
 total_score: 0/70
 775719a
+Fri Apr  8 15:22:43 UTC 2022: 
+ hashmap.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:56:25: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+   for(int i=0;i<capacity,i++)
+                         ^
+hashmap.c:56:29: error: expected ‘;’ before ‘)’ token
+   for(int i=0;i<capacity,i++)
+                             ^
+hashmap.c:58:16: error: subscripted value is neither array nor pointer nor vector
+       createMap[capacity];
+                ^
+cc1: all warnings being treated as errors
+Compilation failed
+8959f94

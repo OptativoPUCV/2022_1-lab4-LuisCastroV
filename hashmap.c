@@ -52,8 +52,12 @@ void enlarge(HashMap * map) {
 
 
 HashMap * createMap(long capacity) {
-
-    return NULL;
+  //arreglo de 10 casillas
+  for(int i=0;i<capacity,i++)
+    {
+      createMap[capacity];
+    }
+  return NULL;
 }
 
 void eraseMap(HashMap * map,  char * key) {    
