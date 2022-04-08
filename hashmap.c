@@ -10,7 +10,7 @@ typedef struct HashMap HashMap;
 int enlarge_called=0;
 
 struct HashMap {
-    Pair ** buckets;
+    Pair ** buckets; //arregl oque aputna ap ares
     long size; //cantidad de datos/pairs en la tabla
     long capacity; //capacidad de la tabla
     long current; //indice del ultimo dato accedido
@@ -59,14 +59,20 @@ HashMap * createMap(long capacity) {
   //   long capacity; //capacidad de la tabla
   //   long current; //indice del ultimo dato accedido  
   // };
-  
-  //arreglo de 10 casillas
-  //HashMap* tabla(HashMap*)malloc(sizeof(HashMap));
- 
+
   //función crea una variable de tipo HashMap, inicializa el arreglo de 
   //buckets con casillas nulas, inicializa el resto de variables y 
   //retorna el mapa. Inicialice el índice current a -1.
-  HashMap* tabla(HashMap*)malloc(sizeof(HashMap*));
+  
+  //dentro de la tabla setearla valro
+  HashMap* tabla=(HashMap*)malloc(sizeof(HashMap*));
+  
+  //recorro el brackets con Null 
+
+  int buckets[capacity],i;
+	for (i=0;i<capacity;i++) buckets[i]=NULL;
+
+  
   for(int i = 0,i<=capacity,i++)
     {
       buckets[i]=NULL;

@@ -649,3 +649,36 @@ hashmap.c:69:12: error: ‘tabla’ defined but not used [-Werror=unused-functio
 cc1: all warnings being treated as errors
 Compilation failed
 8db686d
+Fri Apr  8 15:48:02 UTC 2022: 
+ hashmap.c | 16 +++++++++++-----
+ 1 file changed, 11 insertions(+), 5 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:73:37: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+  for (i=0;i<capacity;i++) buckets[i]=NULL;
+                                     ^
+hashmap.c:76:18: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<=’ token
+   for(int i = 0,i<=capacity,i++)
+                  ^~
+hashmap.c:82:3: error: expected expression before ‘return’
+   return tabla;
+   ^~~~~~
+hashmap.c:83:1: error: expected expression before ‘}’ token
+ }
+ ^
+hashmap.c:83:1: error: expected expression before ‘}’ token
+hashmap.c:76:11: error: unused variable ‘i’ [-Werror=unused-variable]
+   for(int i = 0,i<=capacity,i++)
+           ^
+hashmap.c:72:7: error: variable ‘buckets’ set but not used [-Werror=unused-but-set-variable]
+   int buckets[capacity],i;
+       ^~~~~~~
+hashmap.c:68:12: error: unused variable ‘tabla’ [-Werror=unused-variable]
+   HashMap* tabla=(HashMap*)malloc(sizeof(HashMap*));
+            ^~~~~
+hashmap.c:83:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+2aa50c9
