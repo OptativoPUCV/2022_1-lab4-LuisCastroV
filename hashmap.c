@@ -54,7 +54,7 @@ HashMap * createMap(long capacity) {
   HashMap* tabla=(HashMap*)malloc(sizeof(HashMap));
   
   tabla->buckets = (Pair **) malloc(sizeof(Pair*) * capacity);
-  for (int i=0;i<=capacity;i++)
+  for (int i=0;i<capacity;i++)
      {
         tabla->buckets[i]=NULL;
      }
