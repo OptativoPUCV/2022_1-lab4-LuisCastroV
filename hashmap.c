@@ -51,9 +51,28 @@ void enlarge(HashMap * map) {
 }
 
 HashMap * createMap(long capacity) {
-  //arreglo de 10 casillas
-  HashMap* tabla(HashMap*)malloc(sizeof(HashMap));
+
+
+  // struct HashMap {
+  //   Pair ** buckets;
+  //   long size; //cantidad de datos/pairs en la tabla
+  //   long capacity; //capacidad de la tabla
+  //   long current; //indice del ultimo dato accedido  
+  // };
   
+  //arreglo de 10 casillas
+  //HashMap* tabla(HashMap*)malloc(sizeof(HashMap));
+ 
+  //función crea una variable de tipo HashMap, inicializa el arreglo de 
+  //buckets con casillas nulas, inicializa el resto de variables y 
+  //retorna el mapa. Inicialice el índice current a -1.
+  HashMap* tabla(HashMap*)malloc(sizeof(HashMap));
+  for(int i = 0,i<=capacity,i++)
+    {
+      buckets[i]=NULL;
+      size->tabla=0;
+      current->tabla=0;
+    }
   return NULL;
 }
 
