@@ -73,7 +73,7 @@ HashMap * createMap(long capacity) {
       size->tabla=0;
       current->tabla=0;
     }
-  return NULL;
+  return tabla;
 }
 
 void eraseMap(HashMap * map,  char * key) {    
