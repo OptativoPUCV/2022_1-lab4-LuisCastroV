@@ -50,13 +50,10 @@ void enlarge(HashMap * map) {
 
 }
 
-
 HashMap * createMap(long capacity) {
   //arreglo de 10 casillas
-  for(int i=0;i<capacity,i++)
-    {
-      map[i]=NULL;
-    }
+  HashMap* tabla(HashMap*)malloc(sizeof(HashMap));
+  
   return NULL;
 }
 
