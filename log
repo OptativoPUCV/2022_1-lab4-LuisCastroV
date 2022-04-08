@@ -73,3 +73,22 @@ hashmap.c:58:7: note: each undeclared identifier is reported only once for each 
 cc1: all warnings being treated as errors
 Compilation failed
 ad1eb74
+Fri Apr  8 15:26:03 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:56:25: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+   for(int i=0;i<capacity,i++)
+                         ^
+hashmap.c:56:29: error: expected ‘;’ before ‘)’ token
+   for(int i=0;i<capacity,i++)
+                             ^
+hashmap.c:58:7: error: ‘map’ undeclared (first use in this function); did you mean ‘fmal’?
+       map[i]=NULL;
+       ^~~
+       fmal
+hashmap.c:58:7: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+32bc7b4

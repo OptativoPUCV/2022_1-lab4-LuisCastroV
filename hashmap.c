@@ -55,7 +55,7 @@ HashMap * createMap(long capacity) {
   //arreglo de 10 casillas
   for(int i=0;i<capacity,i++)
     {
-      map[i]=0;
+      map[i]=NULL;
     }
   return NULL;
 }
