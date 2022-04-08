@@ -739,3 +739,18 @@ hashmap.c:74:15: error: ‘size’ undeclared (first use in this function); did 
                sinl
 Compilation failed
 7cf908f
+Fri Apr  8 15:57:14 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:70:8: error: ‘buckets’ undeclared (first use in this function)
+        buckets[i]=NULL;
+        ^~~~~~~
+hashmap.c:70:8: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:74:15: error: ‘size’ undeclared (first use in this function); did you mean ‘sinl’?
+   tabla->size=size;
+               ^~~~
+               sinl
+Compilation failed
+ac05928
