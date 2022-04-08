@@ -65,8 +65,7 @@ HashMap * createMap(long capacity) {
   //retorna el mapa. Inicialice el índice current a -1.
   
   //dentro de la tabla setearla valro
-  HashMap* tabla=(HashMap*)malloc(sizeof(HashMap*));
-  
+  HashMap* tabla=(HashMap*)malloc(sizeof(HashMap));
   //recorro el brackets con Null 
   tabla->buckets = (Pair **) malloc(sizeof(Pair*) * capacity);
   tabla->capacity=capacity;

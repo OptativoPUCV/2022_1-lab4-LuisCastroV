@@ -694,3 +694,15 @@ hashmap.c:73:15: error: ‘size’ undeclared (first use in this function); did 
 hashmap.c:73:15: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 754f048
+Fri Apr  8 15:54:36 UTC 2022: 
+ hashmap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:72:15: error: ‘size’ undeclared (first use in this function); did you mean ‘sinl’?
+   tabla->size=size;
+               ^~~~
+               sinl
+hashmap.c:72:15: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+0b9f389
