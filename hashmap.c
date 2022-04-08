@@ -71,7 +71,7 @@ HashMap * createMap(long capacity) {
     }
   
   tabla->capacity=capacity;
-  tabla->size=size;
+  tabla->size=0;
   tabla->current=-1;
   
   return tabla;
