@@ -682,3 +682,15 @@ hashmap.c:83:1: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 2aa50c9
+Fri Apr  8 15:54:17 UTC 2022: 
+ hashmap.c | 24 +++++++++++++++---------
+ 1 file changed, 15 insertions(+), 9 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:73:15: error: ‘size’ undeclared (first use in this function); did you mean ‘sinl’?
+   tabla->size=size;
+               ^~~~
+               sinl
+hashmap.c:73:15: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+754f048
