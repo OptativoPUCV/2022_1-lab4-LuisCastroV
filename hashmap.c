@@ -82,12 +82,11 @@ void eraseMap(HashMap * map,  char * key) {
 // Recuerde que el arreglo es **circular**.
 
 Pair * searchMap(HashMap * map,  char * key) {   
-  while(map[key]!=NULL)
+  while(map->key!=NULL)
     {
-      if(map[key] == key)
-        return map[key];
+      if(map->key == key)
+        return map->key;
     }
-
     return NULL;
 }
 

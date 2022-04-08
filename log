@@ -820,3 +820,19 @@ hashmap.c:88:19: error: array subscript is not an integer
                    ^
 Compilation failed
 3784a00
+Fri Apr  8 16:18:10 UTC 2022: 
+ hashmap.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:85:12: error: ‘HashMap {aka struct HashMap}’ has no member named ‘key’
+   while(map->key!=NULL)
+            ^~
+hashmap.c:87:13: error: ‘HashMap {aka struct HashMap}’ has no member named ‘key’
+       if(map->key == key)
+             ^~
+hashmap.c:88:19: error: ‘HashMap {aka struct HashMap}’ has no member named ‘key’
+         return map->key;
+                   ^~
+Compilation failed
+b6d473d
