@@ -70,7 +70,7 @@ HashMap * createMap(long capacity) {
        buckets[i]=NULL;
     }
   
-  tabla->capacity=capacity;
+  tabla->capacity=0;
   tabla->size=0;
   tabla->current=-1;
   
