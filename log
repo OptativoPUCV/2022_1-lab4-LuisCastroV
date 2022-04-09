@@ -874,3 +874,27 @@ Sat Apr  9 17:25:16 UTC 2022:
  tests:  1|5
 total_score: 10/70
 18a93cf
+Sat Apr  9 17:31:32 UTC 2022: 
+ hashmap.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:85:3: error: unknown type name ‘nodo’
+   nodo *p=tabla[key];
+   ^~~~
+hashmap.c:85:11: error: ‘tabla’ undeclared (first use in this function); did you mean ‘tanl’?
+   nodo *p=tabla[key];
+           ^~~~~
+           tanl
+hashmap.c:85:11: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:88:13: error: array subscript is not an integer
+       if(map[key]==0)
+             ^
+hashmap.c:90:19: error: array subscript is not an integer
+         return map[key];
+                   ^
+hashmap.c:93:9: error: array subscript is not an integer
+     }p=p[key+1];
+         ^
+Compilation failed
+16daf62

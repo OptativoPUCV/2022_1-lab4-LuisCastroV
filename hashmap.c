@@ -10,7 +10,7 @@ typedef struct HashMap HashMap;
 int enlarge_called=0;
 
 struct HashMap {
-    Pair ** buckets; //arregl oque aputna ap ares
+    Pair ** buckets; //arreglo que apunta a pares
     long size; //cantidad de datos/pairs en la tabla
     long capacity; //capacidad de la tabla
     long current; //indice del ultimo dato accedido
@@ -65,9 +65,6 @@ HashMap * createMap(long capacity) {
 }
 
 void eraseMap(HashMap * map,  char * key) {    
-
-
-  
 }
 
 // 3.- Implemente la función Pair * searchMap(HashMap * map,  char * key), la cual retorna el **Pair** asociado a la clave ingresada. 
@@ -85,6 +82,15 @@ void eraseMap(HashMap * map,  char * key) {
 
 Pair * searchMap(HashMap * map,  char * key)
 {   
+  nodo *p=tabla[key];
+  while(p)
+    {
+      if(map[key]==0)
+      {
+        return map[key];
+      }
+      
+    }p=p[key+1];
   // while(map[key]!=NULL)
   //   {
   //     if(map[key] == key)
