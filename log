@@ -926,3 +926,13 @@ hashmap.c:85:8: error: unused variable ‘index’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 6e10cd5
+Sat Apr  9 17:52:40 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:93:14: error: expected ‘;’ before ‘:’ token
+       index++:
+              ^
+Compilation failed
+908c4b9
