@@ -46,8 +46,6 @@ void insertMap(HashMap * map, char * key, void * value) {
 
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
-
-
 }
 
 HashMap * createMap(long capacity) {
@@ -91,10 +89,10 @@ Pair * searchMap(HashMap * map,  char * key)
         return map->buckets[index]->value;
       }
       index++;
-      if(index>=map->capacity)
+      if(index==map->capacity)
       {
         index=0;
-        }
+      }
     }
     return NULL;
 }
