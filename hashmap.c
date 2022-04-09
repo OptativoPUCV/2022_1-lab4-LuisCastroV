@@ -83,10 +83,9 @@ Pair * searchMap(HashMap * map,  char * key)
   int index=hash(key,map->capacity);
   while(map->buckets[index]!=NULL)
     {
-      if(is_equal(key,map->buckets[index]->key)==1)
+      if(is_equal(key,map->buckets[index]->key)!=1)
       {
-        map->current=index;
-        return map->buckets[index]->value;
+        return NULL;
       }
       index++;
       if(index==map->capacity)
@@ -94,8 +93,9 @@ Pair * searchMap(HashMap * map,  char * key)
         index=0;
       }
     }
-    return NULL;
-}
+    map->current=index;
+    return map->buckets[index]->value;
+} 
 
 
 Pair * firstMap(HashMap * map) {
