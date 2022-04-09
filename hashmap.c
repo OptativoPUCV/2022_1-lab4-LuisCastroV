@@ -82,20 +82,17 @@ void eraseMap(HashMap * map,  char * key) {
 
 Pair * searchMap(HashMap * map,  char * key)
 {   
-  nodo *p=tabla[key];
-  while(p)
+  int index=hash(key,map->capacity)
+  while(map->buckets[index]!=NULL)
     {
-      if(map[key]==0)
+      if(is_equal(key,map->buckets[index]->key)==1)
       {
-        return map[key];
+        map->current=index;
+        return map->buckets[index]->value;
       }
+      index++:
       
-    }p=p[key+1];
-  // while(map[key]!=NULL)
-  //   {
-  //     if(map[key] == key)
-  //       return map[key];
-  //   }
+    }
     return NULL;
 }
 

@@ -898,3 +898,17 @@ hashmap.c:93:9: error: array subscript is not an integer
          ^
 Compilation failed
 16daf62
+Sat Apr  9 17:52:03 UTC 2022: 
+ hashmap.c | 17 +++++++----------
+ 1 file changed, 7 insertions(+), 10 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:86:3: error: expected ‘,’ or ‘;’ before ‘while’
+   while(map->buckets[index]!=NULL)
+   ^~~~~
+hashmap.c:85:7: error: unused variable ‘index’ [-Werror=unused-variable]
+   int index=hash(key,map->capacity)
+       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+dec4b35
