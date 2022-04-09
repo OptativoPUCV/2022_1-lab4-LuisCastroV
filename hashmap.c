@@ -84,9 +84,9 @@ Pair * searchMap(HashMap * map,  char * key)
   map->current = index;
   while(map->buckets[index]!=NULL)
   {
-    printf("%s",map->buckets[index]->key);
     if(is_equal(key,map->buckets[index]->key)==1)
     {
+      printf("%s",map->buckets[index]->key);
       map->current=index;
       return map->buckets[index]->value;
     }
