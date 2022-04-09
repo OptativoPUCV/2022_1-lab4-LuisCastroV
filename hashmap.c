@@ -86,9 +86,8 @@ Pair * searchMap(HashMap * map,  char * key)
   {
     if(is_equal(key,map->buckets[index]->key)==1)
     {
-      printf("%s",map->buckets[index]->key);
       map->current=index;
-      return map->buckets[index]->value;
+      return map->buckets[index];
     }
     index++;
     if(index==map->capacity)
