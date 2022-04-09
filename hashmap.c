@@ -90,7 +90,7 @@ Pair * searchMap(HashMap * map,  char * key)
         map->current=index;
         return map->buckets[index]->value;
       }
-      index++:
+      index++;
       
     }
     return NULL;
