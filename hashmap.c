@@ -82,7 +82,9 @@ void eraseMap(HashMap * map,  char * key) {
 // Recuerde actualizar el índice current a la posición encontrada.
 // Recuerde que el arreglo es **circular**.
 
-Pair * searchMap(HashMap * map,  char * key) {   
+
+Pair * searchMap(HashMap * map,  char * key)
+{   
   while(map[key]!=NULL)
     {
       if(map[key] == key)
@@ -90,6 +92,7 @@ Pair * searchMap(HashMap * map,  char * key) {
     }
     return NULL;
 }
+
 
 Pair * firstMap(HashMap * map) {
 
