@@ -85,11 +85,11 @@ void eraseMap(HashMap * map,  char * key) {
 
 Pair * searchMap(HashMap * map,  char * key)
 {   
-  while(map[key]!=NULL)
-    {
-      if(map[key] == key)
-        return map[key];
-    }
+  // while(map[key]!=NULL)
+  //   {
+  //     if(map[key] == key)
+  //       return map[key];
+  //   }
     return NULL;
 }
 
