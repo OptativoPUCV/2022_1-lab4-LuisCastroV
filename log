@@ -2302,3 +2302,14 @@ Sun Apr 10 16:47:10 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 592ea39
+Sun Apr 10 16:48:09 UTC 2022: 
+ hashmap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:99:8: error: ‘sizeNuevo’ undeclared (first use in this function)
+     if(sizeNuevo == map->size)
+        ^~~~~~~~~
+hashmap.c:99:8: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+717c488
