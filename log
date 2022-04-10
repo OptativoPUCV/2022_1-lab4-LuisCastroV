@@ -2081,3 +2081,20 @@ hashmap.c:62:10: error: unused variable ‘Auxiliar’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 abe88e3
+Sun Apr 10 16:12:21 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:66:11: error: statement with no effect [-Werror=unused-value]
+   Auxiliar[map -> capacity]
+   ~~~~~~~~^~~~~~~~~~~~~~~~~
+hashmap.c:67:3: error: expected ‘;’ before ‘for’
+   for(int i=0;i<CapacidadAntiguo;i++)
+   ^~~
+hashmap.c:63:8: error: unused variable ‘CapacidadAntiguo’ [-Werror=unused-variable]
+   long CapacidadAntiguo = map->capacity;
+        ^~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4bbdf9e
