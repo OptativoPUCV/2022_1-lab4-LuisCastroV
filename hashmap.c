@@ -38,7 +38,6 @@ int is_equal(void* key1, void* key2){
     return 0;
 }
 
-
 void insertMap(HashMap * map, char * key, void * value)
 {
   
@@ -96,8 +95,21 @@ Pair * searchMap(HashMap * map,  char * key)
   return NULL;
 }
 
+// Implemente las funciones para recorrer la estructura: Pair * firstMap(HashMap * map) retorna el primer **Pair** válido del arreglo buckets.
+  
 Pair * firstMap(HashMap * map) 
 {
+  for(int i=0;i<map->capacity;i++)
+     {
+       if(map->buckets[i]!=NULL)
+       {
+         
+         if(map->buckets->key=NULL);
+         {
+           return map->buckets[map->current]->value;
+         }
+       }
+     }
   return NULL;
 }
 

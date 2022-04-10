@@ -1038,3 +1038,21 @@ Sun Apr 10 00:07:57 UTC 2022:
  tests:  7|3
 total_score: 30/70
 377e464
+Sun Apr 10 02:17:08 UTC 2022: 
+ hashmap.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:107:25: error: ‘*map->buckets’ is a pointer; did you mean to use ‘->’?
+          if(map->buckets->key=NULL);
+                         ^~
+                         ->
+hashmap.c:107:10: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+          if(map->buckets->key=NULL);
+          ^~
+hashmap.c:108:10: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+          {
+          ^
+cc1: all warnings being treated as errors
+Compilation failed
+89316ea
