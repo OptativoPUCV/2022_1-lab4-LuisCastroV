@@ -2192,3 +2192,14 @@ Sun Apr 10 16:21:11 UTC 2022:
  1 file changed, 7 insertions(+), 9 deletions(-)
  tests:  0|0
 56330d3
+Sun Apr 10 16:23:45 UTC 2022: 
+ hashmap.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:83:10: error: unused variable ‘Auxiliar’ [-Werror=unused-variable]
+   Pair** Auxiliar=map->buckets;
+          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5a8abff
