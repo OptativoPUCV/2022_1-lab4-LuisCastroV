@@ -1558,3 +1558,13 @@ Sun Apr 10 03:42:36 UTC 2022:
  tests:  16|1
 total_score: 60/70
 2e723a3
+Sun Apr 10 03:43:14 UTC 2022: 
+ hashmap.c | 22 +++++++++++-----------
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:83:9: error: expected ‘;’ before ‘}’ token
+         }
+         ^
+Compilation failed
+0d72a71
