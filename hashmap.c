@@ -117,7 +117,6 @@ Pair * searchMap(HashMap * map,  char * key)
       index=0;
     }
   }
-  printf(map->current);
   return NULL;
 }
 

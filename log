@@ -1313,3 +1313,9 @@ hashmap.c:120:3: error: format not a string literal and no format arguments [-We
 cc1: all warnings being treated as errors
 Compilation failed
 58ad0e0
+Sun Apr 10 02:52:59 UTC 2022: 
+ hashmap.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  12|2
+total_score: 40/70
+5422f76
