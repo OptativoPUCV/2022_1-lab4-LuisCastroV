@@ -1598,3 +1598,17 @@ Sun Apr 10 03:48:06 UTC 2022:
  1 file changed, 2 insertions(+), 1 deletion(-)
  tests:  0|0
 a0345d1
+Sun Apr 10 03:49:23 UTC 2022: 
+ hashmap.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:75:8: error: unused variable ‘CapacidadAntigua’ [-Werror=unused-variable]
+   long CapacidadAntigua = map->capacity;
+        ^~~~~~~~~~~~~~~~
+hashmap.c:74:10: error: unused variable ‘Auxiliar’ [-Werror=unused-variable]
+   Pair** Auxiliar=map->buckets;
+          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8b655dc
