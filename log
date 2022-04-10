@@ -1963,3 +1963,20 @@ Sun Apr 10 04:53:32 UTC 2022:
  tests:  16|1
 total_score: 60/70
 36c2694
+Sun Apr 10 14:42:40 UTC 2022: 
+ hashmap.c | 24 +++++++++++++++++++-----
+ 1 file changed, 19 insertions(+), 5 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:85:28: error: passing argument 1 of ‘hash’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+             int index=hash(Auxiliar[i],map->capacity);
+                            ^~~~~~~~
+hashmap.c:26:6: note: expected ‘char *’ but argument is of type ‘Pair * {aka struct Pair *}’
+ long hash( char * key, long capacity) {
+      ^~~~
+hashmap.c:75:8: error: unused variable ‘CapacidadAntiguo’ [-Werror=unused-variable]
+   long CapacidadAntiguo = map->capacity;
+        ^~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+84bbddc
