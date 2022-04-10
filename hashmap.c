@@ -87,7 +87,7 @@ void enlarge(HashMap * map)
   map->size=0;
   for(int i=0;i<map -> capacity;i++)
   {
-    if(sizeNuevo != map->size)
+    if(sizeNuevo == map->size)
     {
       if(Auxiliar[i]->key != NULL)
       {
@@ -95,10 +95,10 @@ void enlarge(HashMap * map)
         map->size++;
       }
     }
-    else{
+    else
+    {
           break;
     }
-
   }
 }
 
