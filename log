@@ -1527,3 +1527,18 @@ hashmap.c:83:9: error: expected ‘;’ before ‘}’ token
          ^
 Compilation failed
 8f5acc9
+Sun Apr 10 03:37:05 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:82:25: error: ‘Auxilia’ undeclared (first use in this function); did you mean ‘Auxiliar’?
+           insertMap(map,Auxilia[i]->key, Auxiliar[i]->value)
+                         ^~~~~~~
+                         Auxiliar
+hashmap.c:82:25: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:83:9: error: expected ‘;’ before ‘}’ token
+         }
+         ^
+Compilation failed
+fb8c74c
