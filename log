@@ -2187,3 +2187,8 @@ hashmap.c:83:10: error: unused variable ‘Auxiliar’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 f9985a8
+Sun Apr 10 16:21:11 UTC 2022: 
+ hashmap.c | 16 +++++++---------
+ 1 file changed, 7 insertions(+), 9 deletions(-)
+ tests:  0|0
+56330d3
