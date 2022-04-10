@@ -1773,3 +1773,26 @@ Sun Apr 10 04:19:44 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 3e30ca8
+Sun Apr 10 04:21:14 UTC 2022: 
+ hashmap.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:74:18: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   Pair* Auxiliar=map->buckets;
+                  ^~~
+hashmap.c:80:20: error: invalid operands to binary != (have ‘Pair {aka struct Pair}’ and ‘void *’)
+     if(Auxiliar[i] != NULL)
+        ~~~~~~~~~~~ ^~
+hashmap.c:82:21: error: invalid type argument of ‘->’ (have ‘Pair {aka struct Pair}’)
+       if(Auxiliar[i]->key != NULL)
+                     ^~
+hashmap.c:84:34: error: invalid type argument of ‘->’ (have ‘Pair {aka struct Pair}’)
+         insertMap(map,Auxiliar[i]->key, Auxiliar[i]->value);
+                                  ^~
+hashmap.c:84:52: error: invalid type argument of ‘->’ (have ‘Pair {aka struct Pair}’)
+         insertMap(map,Auxiliar[i]->key, Auxiliar[i]->value);
+                                                    ^~
+cc1: all warnings being treated as errors
+Compilation failed
+dd66fdb
