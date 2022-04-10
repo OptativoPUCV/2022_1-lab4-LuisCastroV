@@ -76,7 +76,7 @@ void enlarge(HashMap * map)
   map=createMap(CapacidadNueva);
   for(int i=0;i<CapacidadNueva;i++)
   {
-    if(Auxiliar[i] != NULL)
+    if(Auxiliar[i]->key != NULL)
     {
       insertMap(map,Auxiliar[i]->key, Auxiliar[i]->value);
     }
