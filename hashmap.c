@@ -95,10 +95,6 @@ void enlarge(HashMap * map)
         map->size++;
       }
     }
-    else
-    {
-          break;
-    }
   }
 }
 
