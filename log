@@ -2243,3 +2243,13 @@ hashmap.c:87:15: error: ‘i’ undeclared (first use in this function)
 hashmap.c:87:15: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 7e636aa
+Sun Apr 10 16:36:29 UTC 2022: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:89:19: error: ‘Pair {aka struct Pair}’ has no member named ‘size’
+     if(Auxiliar[i]->size!=map->size)
+                   ^~
+Compilation failed
+d458ff2
