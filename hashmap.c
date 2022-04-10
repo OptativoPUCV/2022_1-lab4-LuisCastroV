@@ -78,19 +78,12 @@ void enlarge(HashMap * map)
   map=createMap(CapacidadNueva);
   for(int i=0;i<CapacidadAntiguo;i++)
   {
-    if(Auxiliar[i]!=NULL)
+    if(Auxiliar[i]->key != NULL)
     {
-      insertMap(map,Auxiliar[i]->key, Auxiliar[i]->value);
-    }
+       insertMap(map,Auxiliar[i]->key, Auxiliar[i]->value);
+     }
   }
 }
-  // {
-  //   if(Auxiliar[i]->key != NULL)
-  //   {
-  //      insertMap(map,Auxiliar[i]->key, Auxiliar[i]->value);
-  //    }
-  // }
-//}
 
 HashMap * createMap(long capacity) {
   HashMap* tabla=(HashMap*)malloc(sizeof(HashMap));
