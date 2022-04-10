@@ -2253,3 +2253,8 @@ hashmap.c:89:19: error: ‘Pair {aka struct Pair}’ has no member named ‘size
                    ^~
 Compilation failed
 d458ff2
+Sun Apr 10 16:37:30 UTC 2022: 
+ hashmap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ tests:  0|0
+a49c9a4
