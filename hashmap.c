@@ -91,7 +91,7 @@ void enlarge(HashMap * map)
     printf("%li ---- %li\n",map->size,sizeAntiguo);
     if(map->size != sizeAntiguo)
     {
-      if(Auxiliar[i]->key != NULL)
+      if(Auxiliar[i] != NULL)
       {
         insertMap(map,Auxiliar[i]->key, Auxiliar[i]->value);
         map->size++;
