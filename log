@@ -1509,3 +1509,21 @@ hashmap.c:83:9: error: expected ‘;’ before ‘}’ token
          ^
 Compilation failed
 68cff73
+Sun Apr 10 03:36:52 UTC 2022: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:82:33: error: ‘*Auxiliar’ is a pointer; did you mean to use ‘->’?
+           insertMap(map,Auxiliar->key, Auxiliar->value)
+                                 ^~
+                                 ->
+hashmap.c:82:48: error: ‘*Auxiliar’ is a pointer; did you mean to use ‘->’?
+           insertMap(map,Auxiliar->key, Auxiliar->value)
+                                                ^~
+                                                ->
+hashmap.c:83:9: error: expected ‘;’ before ‘}’ token
+         }
+         ^
+Compilation failed
+8f5acc9

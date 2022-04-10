@@ -73,13 +73,13 @@ void enlarge(HashMap * map)
   enlarge_called = 1; //no borrar (testing purposes)
   Pair** Auxiliar=map->buckets;
   long CapacidadNueva = map->capacity*2;
-  nuevoMapa=createMap(CapacidadNueva);
+  map=createMap(CapacidadNueva);
   map->size=0;
   for(long i=0;i<CapacidadNueva;i++)
      {
         if(Auxiliar[i]->key != NULL)
         {
-          insertMap(nuevoMapa,Auxiliar->key, Auxiliar->value)
+          insertMap(map,Auxiliar->key, Auxiliar->value)
         }
      }
 }
