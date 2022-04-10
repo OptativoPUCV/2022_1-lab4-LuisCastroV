@@ -65,6 +65,7 @@ void insertMap(HashMap * map, char * key, void * value)
       index=0;
     }
   }
+  map -> buckets[index] = dato;
   map->size++;
 }
 
