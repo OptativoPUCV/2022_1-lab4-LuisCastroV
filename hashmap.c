@@ -80,10 +80,11 @@ void insertMap(HashMap * map, char * key, void * value)
 void enlarge(HashMap * map)
 {
   enlarge_called = 1; //no borrar (testing purposes)
-  //Pair** Auxiliar=map->buckets;
-  //long CapacidadAntiguo=map -> capacity;
+  Pair** Auxiliar=map->buckets;
+  long CapacidadAntiguo=map -> capacity;
   map -> capacity *= 2;
-  printf("%li fffffffffffffffffffffff \n ",map -> capacity);
+  map->buckets = (Pair **) malloc(sizeof(Pair*) * map -> capacity);
+  
   // Auxiliar[map -> capacity];
   //for(int i=0;i<CapacidadAntiguo;i++)
   // {
