@@ -74,11 +74,10 @@ void enlarge(HashMap * map)
   Pair** Auxiliar=map->buckets;
   long CapacidadAntiguo = map->capacity;
   long CapacidadNueva = map->capacity*2;
-  free(map);
   map=createMap(CapacidadNueva);
   for(int i=0;i<CapacidadAntiguo;i++)
   {
-    if(Auxiliar[i]!=NULL)
+    if(Auxiliar[i]==NULL)
     {
       break;
     }
