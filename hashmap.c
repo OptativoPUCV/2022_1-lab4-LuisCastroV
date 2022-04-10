@@ -56,7 +56,7 @@ void insertMap(HashMap * map, char * key, void * value)
   Pair *dato= createPair(key,value);
   int index=hash(dato->key,map->capacity);
   map->current = index;
-  printf(map->current);
+  
   while(map->buckets[index]!=NULL)
   {
     index++;
@@ -117,6 +117,7 @@ Pair * searchMap(HashMap * map,  char * key)
       index=0;
     }
   }
+  printf(map->current);
   return NULL;
 }
 

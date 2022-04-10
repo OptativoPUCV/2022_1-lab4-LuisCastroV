@@ -1294,3 +1294,22 @@ hashmap.c:59:3: error: format not a string literal and no format arguments [-Wer
 cc1: all warnings being treated as errors
 Compilation failed
 78a8b75
+Sun Apr 10 02:52:47 UTC 2022: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:120:10: error: passing argument 1 of ‘printf’ makes pointer from integer without a cast [-Werror=int-conversion]
+   printf(map->current);
+          ^~~
+In file included from test.c:1:0:
+/usr/include/stdio.h:318:12: note: expected ‘const char * restrict’ but argument is of type ‘long int’
+ extern int printf (const char *__restrict __format, ...);
+            ^~~~~~
+In file included from test.c:4:0:
+hashmap.c:120:3: error: format not a string literal and no format arguments [-Werror=format-security]
+   printf(map->current);
+   ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+58ad0e0
