@@ -87,13 +87,17 @@ void enlarge(HashMap * map)
   map->size=0;
   for(int i=0;i<map -> capacity;i++)
   {
-    if(map->size == sizeNuevo)
+    if(sizeNuevo != map->size)
     {
       if(Auxiliar[i]->key != NULL)
       {
         insertMap(map,Auxiliar[i]->key, Auxiliar[i]->value);
         map->size++;
       }
+    }
+    if(sizeNuevo == map->size)
+    {
+          break;
     }
   }
 }
