@@ -82,10 +82,7 @@ void enlarge(HashMap * map)
       {
         for(int j=0;j<CapacidadNueva;j++)
           {
-            int index=hash(Auxiliar[i],map->capacity);
-            if(Auxiliar[index]==NULL)
-            {
-              insertMap(map,Auxiliar[i]->key, Auxiliar[i]->value);
+              insertMap(map,Auxiliar[J]->key, Auxiliar[J]->value);
             }
           }
       }
