@@ -87,7 +87,6 @@ void enlarge(HashMap * map)
       }
     }
   }
-  free(map);
 }
 
 HashMap * createMap(long capacity) {
