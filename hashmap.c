@@ -93,7 +93,7 @@ void enlarge(HashMap * map)
   //      insertMap(map,Auxiliar[i]->key, Auxiliar[i]->value);
   //    }
   // }
-}
+//}
 
 HashMap * createMap(long capacity) {
   HashMap* tabla=(HashMap*)malloc(sizeof(HashMap));
