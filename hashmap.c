@@ -72,7 +72,7 @@ void enlarge(HashMap * map)
 {
   enlarge_called = 1; //no borrar (testing purposes)
   Pair** Auxiliar=map->buckets;
-  free(map);
+  
   int CapacidadNueva = map->capacity*2;
   
   map=createMap(CapacidadNueva);
@@ -87,6 +87,7 @@ void enlarge(HashMap * map)
       }
     }
   }
+  free(map);
 }
 
 HashMap * createMap(long capacity) {
