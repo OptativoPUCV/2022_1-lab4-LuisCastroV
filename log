@@ -1319,3 +1319,16 @@ Sun Apr 10 02:52:59 UTC 2022:
  tests:  12|2
 total_score: 40/70
 5422f76
+Sun Apr 10 02:53:25 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:56:14: error: invalid initializer
+   Pair dato= createPair(key,value);
+              ^~~~~~~~~~
+hashmap.c:57:22: error: invalid type argument of ‘->’ (have ‘Pair {aka struct Pair}’)
+   int index=hash(dato->key,map->capacity);
+                      ^~
+Compilation failed
+f3d57dc
