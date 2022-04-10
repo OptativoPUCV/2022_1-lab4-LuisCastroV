@@ -1235,3 +1235,18 @@ hashmap.c:56:9: error: unused variable ‘dato’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 237b649
+Sun Apr 10 02:48:02 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:57:18: error: passing argument 1 of ‘hash’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   int index=hash(dato,map->capacity);
+                  ^~~~
+In file included from test.c:4:0:
+hashmap.c:26:6: note: expected ‘char *’ but argument is of type ‘Pair * {aka struct Pair *}’
+ long hash( char * key, long capacity) {
+      ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+615164f
