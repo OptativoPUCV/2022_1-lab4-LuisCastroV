@@ -92,9 +92,9 @@ void enlarge(HashMap * map)
   //   }
   // }
    {
-    if(map->buckets[i]->key != NULL)
+    if(Auxiliar[i]->key != NULL)
     {
-      insertMap(map,map->buckets[i]->key, map->buckets[i]->value);
+      insertMap(map,Auxiliar[i]->key, Auxiliar[i]->value);
     }
   }
 }
