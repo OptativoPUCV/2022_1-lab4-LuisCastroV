@@ -2098,3 +2098,14 @@ hashmap.c:63:8: error: unused variable ‘CapacidadAntiguo’ [-Werror=unused-va
 cc1: all warnings being treated as errors
 Compilation failed
 4bbdf9e
+Sun Apr 10 16:12:36 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:66:11: error: statement with no effect [-Werror=unused-value]
+   Auxiliar[map -> capacity];
+   ~~~~~~~~^~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c7e5662
