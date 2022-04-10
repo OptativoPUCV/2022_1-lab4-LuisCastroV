@@ -1162,3 +1162,20 @@ Sun Apr 10 02:30:27 UTC 2022:
  tests:  12|2
 total_score: 40/70
 775482a
+Sun Apr 10 02:41:07 UTC 2022: 
+ hashmap.c | 27 +++++++++++++++++++++++++--
+ 1 file changed, 25 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:66:15: error: expected expression before ‘;’ token
+   map->size=++;
+               ^
+hashmap.c:68:10: error: ‘return’ with a value, in function returning void [-Werror]
+   return NULL;
+          ^~~~
+hashmap.c:54:6: note: declared here
+ void insertMap(HashMap * map, char * key, void * value)
+      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c7a0d7f
