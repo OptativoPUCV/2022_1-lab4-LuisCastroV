@@ -95,7 +95,10 @@ void enlarge(HashMap * map)
         map->size++;
       }
     }
-    break;
+    else{
+          break;
+    }
+
   }
 }
 
