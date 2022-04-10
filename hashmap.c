@@ -112,8 +112,8 @@ Pair * firstMap(HashMap * map)
 }
 
 // Pair * nextMap(HashMap * map) retorna el siguiente **Pair** del arreglo buckets a partir índice current. Recuerde actualizar el índice.
-// Pair * nextMap(HashMap * map) 
 
+Pair * nextMap(HashMap * map) 
 {
   for(int i=map->current;i<map->capacity;i++)
   {
