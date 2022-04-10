@@ -72,7 +72,7 @@ void enlarge(HashMap * map)
 {
   enlarge_called = 1; //no borrar (testing purposes)
   Pair** Auxiliar=map->buckets;
-  long CapacidadAntiguo = map->capacity;
+  //long CapacidadAntiguo = map->capacity;
   long CapacidadNueva = map->capacity*2;
   map=createMap(CapacidadNueva);
   for(int i=0;i<CapacidadNueva;i++)
