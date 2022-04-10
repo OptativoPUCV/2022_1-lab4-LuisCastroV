@@ -78,7 +78,7 @@ void enlarge(HashMap * map)
   map=createMap(CapacidadNueva);
   for(int i=0;i<CapacidadAntiguo;i++)
   {
-    if(Auxiliar[i]==NULL)
+    if(Auxiliar[i]!=NULL)
     {
       continue;
     }
