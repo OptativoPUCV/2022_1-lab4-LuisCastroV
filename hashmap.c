@@ -40,8 +40,6 @@ int is_equal(void* key1, void* key2){
 
 
 void insertMap(HashMap * map, char * key, void * value) {
-
-
 }
 
 void enlarge(HashMap * map) {
@@ -61,10 +59,22 @@ HashMap * createMap(long capacity) {
   
   return tabla;
 }
-
-void eraseMap(HashMap * map,  char * key) {    
+// 4.- Implemente la función void eraseMap(HashMap * map,  char * key). Está función elimina el dato correspondiente a la clave key. Para hacerlo debe buscar el dato y luego *marcarlo* para que no sea válido.
+// **No elimine el par**, sólo invalídelo asignando NULL a la clave (pair->key=NULL).
+// Recuerde actualizar la variable size.
+  
+void eraseMap(HashMap * map,  char * key) 
+{   
+  void *dato=searchMap(map,key);
+  if(dato!=NULL)
+  {
+    if(is_equal(key,map->buckets[map->current]->key)==1)
+    {
+      map->buckets[map->current]->key=NULL;
+      map->size=map->size-1;
+    }
+  }
 }
-
 
 Pair * searchMap(HashMap * map,  char * key)
 {   
