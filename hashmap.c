@@ -77,7 +77,7 @@ HashMap * createMap(long capacity) {
  
 void eraseMap(HashMap * map,  char * key) 
 {   
-  void *dato=searchMap(map,key);
+  Pair *dato=searchMap(map,key);
   if(dato!=NULL)
   {
     if(is_equal(key,map->buckets[map->current]->key)==1)
