@@ -96,7 +96,7 @@ void enlarge(HashMap * map)
         map->size++;
       }
     }
-    if(sizeNuevo == map->size)
+    if(sizeAntiguo == map->size)
     {
       break;
     }
