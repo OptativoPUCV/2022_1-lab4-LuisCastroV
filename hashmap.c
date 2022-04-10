@@ -81,16 +81,18 @@ void enlarge(HashMap * map)
 {
   enlarge_called = 1; //no borrar (testing purposes)
   Pair** Auxiliar=map->buckets;
-  long CapacidadAntiguo=map -> capacity;
   map -> capacity *= 2;
   map->buckets = (Pair **) malloc(sizeof(Pair*) * map -> capacity);
   map->size=0;
-  for(int i=0;i<CapacidadAntiguo;i++)
+  if(Auxiliar[i]->size!=map->size)
   {
-    if(Auxiliar[i]->key != NULL)
+    for(int i=0;i<map -> capacity;i++)
     {
-      insertMap(map,Auxiliar[i]->key, Auxiliar[i]->value);
-      map->size++;
+      if(->key != NULL)
+      {
+        insertMap(map,Auxiliar[i]->key, Auxiliar[i]->value);
+        map->size++;
+      }
     }
   }
 }

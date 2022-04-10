@@ -2218,3 +2218,17 @@ Sun Apr 10 16:27:07 UTC 2022:
  1 file changed, 2 insertions(+)
  tests:  0|0
 36b0796
+Sun Apr 10 16:34:34 UTC 2022: 
+ hashmap.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:87:15: error: ‘i’ undeclared (first use in this function)
+   if(Auxiliar[i]->size!=map->size)
+               ^
+hashmap.c:87:15: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:91:10: error: expected expression before ‘->’ token
+       if(->key != NULL)
+          ^~
+Compilation failed
+7a84372
