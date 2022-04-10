@@ -1129,3 +1129,12 @@ Sun Apr 10 02:24:45 UTC 2022:
  tests:  9|3
 total_score: 30/70
 181cfad
+Sun Apr 10 02:26:23 UTC 2022: 
+ hashmap.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c:117:1: error: expected identifier or ‘(’ before ‘{’ token
+ {
+ ^
+Compilation failed
+ac0c6ed
