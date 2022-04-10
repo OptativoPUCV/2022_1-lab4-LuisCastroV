@@ -2109,3 +2109,18 @@ hashmap.c:66:11: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 c7e5662
+Sun Apr 10 16:15:06 UTC 2022: 
+ hashmap.c | 24 ++++++++++++++++++++++--
+ 1 file changed, 22 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:86:11: error: statement with no effect [-Werror=unused-value]
+   Auxiliar[map -> capacity];
+   ~~~~~~~~^~~~~~~~~~~~~~~~~
+hashmap.c:87:17: error: ‘CapacidadAntiguo’ undeclared (first use in this function)
+   for(int i=0;i<CapacidadAntiguo;i++)
+                 ^~~~~~~~~~~~~~~~
+hashmap.c:87:17: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+36f6ce6
