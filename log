@@ -1224,3 +1224,14 @@ hashmap.c:56:9: error: unused variable ‘dato’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 747ff28
+Sun Apr 10 02:47:35 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:56:9: error: unused variable ‘dato’ [-Werror=unused-variable]
+   Pair *dato= createPair(key,value);
+         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+237b649
