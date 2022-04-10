@@ -56,18 +56,6 @@ void insertMap(HashMap * map, char * key, void * value)
   map->size++;
 }
 
-// Puede seguir los siguientes pasos:
-
-// a - Cree una variable auxiliar de tipo Pair** para matener el arreglo map->buckets (*old_buckets*);
-
-// b - Duplique el valor de la variable capacity.
-
-// c - Asigne a map->buckets un nuevo arreglo con la nueva capacidad.
-
-// d - Inicialice size a 0.
-
-// e - Inserte los elementos del arreglo *old_buckets* en el mapa (use la función insertMap que ya implementó).
-  
 void enlarge(HashMap * map)
 {
   enlarge_called = 1; //no borrar (testing purposes)
