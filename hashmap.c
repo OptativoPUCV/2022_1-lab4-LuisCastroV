@@ -81,7 +81,10 @@ void enlarge(HashMap * map)
     {
       insertMap(map,Auxiliar[i]->key, Auxiliar[i]->value);
     }
-    if(Auxiliar[i]==NULL);
+    if(Auxiliar[i]==NULL)
+    {
+      
+    }
   }
 }
 
