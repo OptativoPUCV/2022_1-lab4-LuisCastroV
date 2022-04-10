@@ -1542,3 +1542,13 @@ hashmap.c:83:9: error: expected ‘;’ before ‘}’ token
          ^
 Compilation failed
 fb8c74c
+Sun Apr 10 03:37:10 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:83:9: error: expected ‘;’ before ‘}’ token
+         }
+         ^
+Compilation failed
+36888ec
