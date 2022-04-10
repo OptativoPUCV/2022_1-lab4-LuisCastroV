@@ -2061,3 +2061,23 @@ Sun Apr 10 16:09:09 UTC 2022:
  1 file changed, 2 insertions(+), 1 deletion(-)
  tests:  0|0
 7f8ba89
+Sun Apr 10 16:11:49 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:66:15: error: statement with no effect [-Werror=unused-value]
+   map->buckets[map -> capacity]
+   ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+hashmap.c:67:3: error: expected ‘;’ before ‘for’
+   for(int i=0;i<CapacidadAntiguo;i++)
+   ^~~
+hashmap.c:63:8: error: unused variable ‘CapacidadAntiguo’ [-Werror=unused-variable]
+   long CapacidadAntiguo = map->capacity;
+        ^~~~~~~~~~~~~~~~
+hashmap.c:62:10: error: unused variable ‘Auxiliar’ [-Werror=unused-variable]
+   Pair** Auxiliar=map->buckets;
+          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+abe88e3
