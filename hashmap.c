@@ -41,7 +41,7 @@ int is_equal(void* key1, void* key2){
 void insertMap(HashMap * map, char * key, void * value)
 {
   Pair *dato= createPair(key,value);
-  int index=hash(dato->key,map->capacity);
+  long index=hash(dato->key,map->capacity);
   map->current = index;
   
   while(map->buckets[index]!=NULL)
@@ -79,7 +79,7 @@ void enlarge(HashMap * map)
 HashMap * createMap(long capacity) {
   HashMap* tabla=(HashMap*)malloc(sizeof(HashMap));
   tabla->buckets = (Pair **) malloc(sizeof(Pair*) * capacity);
-  for(int i=0;i<capacity;i++)
+  for(long i=0;i<capacity;i++)
      {
         tabla->buckets[i]=NULL;
      }
@@ -125,7 +125,7 @@ Pair * searchMap(HashMap * map,  char * key)
 
 Pair * firstMap(HashMap * map) 
 {
-  for(int i=0;i<map->capacity;i++)
+  for(long i=0;i<map->capacity;i++)
   {
     if(map->buckets[i] != NULL)
     {
@@ -141,7 +141,7 @@ Pair * firstMap(HashMap * map)
 
 Pair * nextMap(HashMap * map) 
 {
-  for(int i=map->current+1;i<map->capacity;i++)
+  for(long i=map->current+1;i<map->capacity;i++)
   {
     if(map->buckets[i] != NULL)
     {
