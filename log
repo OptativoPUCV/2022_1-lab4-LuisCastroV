@@ -1670,3 +1670,14 @@ Sun Apr 10 04:02:29 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 13d9777
+Sun Apr 10 04:05:06 UTC 2022: 
+ hashmap.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:75:8: error: unused variable ‘CapacidadAntigua’ [-Werror=unused-variable]
+   long CapacidadAntigua = map->capacity;
+        ^~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+68f547f
