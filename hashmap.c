@@ -91,13 +91,12 @@ void eraseMap(HashMap * map,  char * key)
 Pair * searchMap(HashMap * map,  char * key)
 {   
   int index=hash(key,map->capacity);
-  index=map->current;
+  map->current=index;
   while(map->buckets[index]!=NULL)
   {
     if(is_equal(key,map->buckets[index]->key)==1)
     {
-      index=map->current;
-      //map->current=index;
+      map->current=index;
       return map->buckets[index];
     }
     index++;
