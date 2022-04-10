@@ -2232,3 +2232,14 @@ hashmap.c:91:10: error: expected expression before ‘->’ token
           ^~
 Compilation failed
 7a84372
+Sun Apr 10 16:34:45 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:87:15: error: ‘i’ undeclared (first use in this function)
+   if(Auxiliar[i]->size!=map->size)
+               ^
+hashmap.c:87:15: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+7e636aa
