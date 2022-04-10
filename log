@@ -2152,3 +2152,14 @@ hashmap.c:83:10: error: unused variable ‘Auxiliar’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 a1a5637
+Sun Apr 10 16:16:05 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:84:8: error: unused variable ‘CapacidadAntiguo’ [-Werror=unused-variable]
+   long CapacidadAntiguo=map -> capacity;
+        ^~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4bcf259
