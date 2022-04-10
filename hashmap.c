@@ -83,7 +83,7 @@ void enlarge(HashMap * map)
   //Pair** Auxiliar=map->buckets;
   //long CapacidadAntiguo=map -> capacity;
   map -> capacity *= 2;
-  printf("%li",map -> capacity);
+  printf("%li fffffffffffffffffffffff \n ",map -> capacity);
   // Auxiliar[map -> capacity];
   //for(int i=0;i<CapacidadAntiguo;i++)
   // {
