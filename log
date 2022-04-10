@@ -1332,3 +1332,9 @@ hashmap.c:57:22: error: invalid type argument of ‘->’ (have ‘Pair {aka str
                       ^~
 Compilation failed
 f3d57dc
+Sun Apr 10 02:53:37 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  12|2
+total_score: 40/70
+f6eb78b
