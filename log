@@ -1681,3 +1681,8 @@ hashmap.c:75:8: error: unused variable ‘CapacidadAntigua’ [-Werror=unused-va
 cc1: all warnings being treated as errors
 Compilation failed
 68f547f
+Sun Apr 10 04:05:14 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+17379c6
