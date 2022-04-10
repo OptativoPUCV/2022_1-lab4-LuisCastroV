@@ -2283,3 +2283,17 @@ Sun Apr 10 16:45:38 UTC 2022:
  1 file changed, 5 insertions(+), 1 deletion(-)
  tests:  0|0
 5354f85
+Sun Apr 10 16:46:41 UTC 2022: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:89:3: error: expected ‘;’ before ‘for’
+   for(int i=0;i<map -> capacity;i++)
+   ^~~
+hashmap.c:83:10: error: unused variable ‘Auxiliar’ [-Werror=unused-variable]
+   Pair** Auxiliar=map->buckets;
+          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+19c69fc

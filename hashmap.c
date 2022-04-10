@@ -85,6 +85,7 @@ void enlarge(HashMap * map)
   map -> capacity *= 2;
   map->buckets = (Pair **) malloc(sizeof(Pair*) * map -> capacity);
   map->size=0;
+  printf("%li ---- %li\n",sizeNuevo,map->size)
   for(int i=0;i<map -> capacity;i++)
   {
     if(sizeNuevo != map->size)
@@ -97,7 +98,7 @@ void enlarge(HashMap * map)
     }
     if(sizeNuevo == map->size)
     {
-          break;
+      break;
     }
   }
 }
