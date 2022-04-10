@@ -80,7 +80,7 @@ void enlarge(HashMap * map)
   {
     if(Auxiliar[i]!=NULL)
     {
-      continue;
+      break;
     }
     if(Auxiliar[i]->key != NULL)
     {
