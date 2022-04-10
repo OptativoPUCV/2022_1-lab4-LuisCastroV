@@ -53,6 +53,7 @@ int is_equal(void* key1, void* key2){
 
 void insertMap(HashMap * map, char * key, void * value)
 {
+  Pair *dato= createPair(key,value) 
   int index=hash(key,map->capacity);
   map->current = index;
   while(map->buckets[index]!=NULL)

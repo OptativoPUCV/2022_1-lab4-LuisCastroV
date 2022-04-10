@@ -1195,3 +1195,32 @@ Sun Apr 10 02:41:45 UTC 2022:
  tests:  12|2
 total_score: 40/70
 9dafb26
+Sun Apr 10 02:47:25 UTC 2022: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:57:3: error: expected ‘,’ or ‘;’ before ‘int’
+   int index=hash(key,map->capacity);
+   ^~~
+hashmap.c:58:16: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+   map->current = index;
+                ^
+hashmap.c:59:21: error: array subscript is not an integer
+   while(map->buckets[index]!=NULL)
+                     ^
+hashmap.c:61:10: error: lvalue required as increment operand
+     index++;
+          ^~
+hashmap.c:62:13: error: comparison between pointer and integer [-Werror]
+     if(index==map->capacity)
+             ^~
+hashmap.c:64:12: error: lvalue required as left operand of assignment
+       index=0;
+            ^
+hashmap.c:56:9: error: unused variable ‘dato’ [-Werror=unused-variable]
+   Pair *dato= createPair(key,value)
+         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+747ff28
