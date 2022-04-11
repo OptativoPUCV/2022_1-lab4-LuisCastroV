@@ -41,8 +41,7 @@ int is_equal(void* key1, void* key2){
 void insertMap(HashMap * map, char * key, void * value)
 {
   Pair *dato= createPair(key,value);
-  int index=hash(dato->key,map->capacity);
-  
+  int index=hash(dato->key,map->capacity); 
   while(map->buckets[index]!=NULL)
   {
     index++;
@@ -113,7 +112,7 @@ Pair * searchMap(HashMap * map,  char * key)
   {
     if(is_equal(key,map->buckets[index]->key)==1)
     {
-      map->current=index;
+      //map->current=index;
       return map->buckets[index];
     }
     index++;
