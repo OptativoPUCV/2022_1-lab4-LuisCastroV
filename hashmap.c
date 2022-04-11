@@ -112,7 +112,7 @@ Pair * searchMap(HashMap * map,  char * key)
   {
     if(is_equal(key,map->buckets[index]->key)==1)
     {
-      //map->current=index;
+      map->current=index;
       return map->buckets[index];
     }
     index++;
@@ -132,7 +132,7 @@ Pair * firstMap(HashMap * map)
     {
       if(map->buckets[i]->key != NULL)
       {
-        map->current=i;
+        //map->current=i;
         return map->buckets[i];
       }
     }
