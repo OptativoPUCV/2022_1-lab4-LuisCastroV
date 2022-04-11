@@ -42,7 +42,7 @@ void insertMap(HashMap * map, char * key, void * value)
 {
   Pair *dato= createPair(key,value);
   int index=hash(dato->key,map->capacity);
-  map->current = index;
+  //map->current = index;
   
   while(map->buckets[index]!=NULL)
   {
@@ -64,7 +64,6 @@ void enlarge(HashMap * map)
   map -> capacity *= 2;
   map->buckets = (Pair **) malloc(sizeof(Pair*) * map -> capacity);
   map->size=0;
-  //printf("%li ---- %li\n",map->size,sizeAntiguo);
   for(int i=0;i<map -> capacity;i++)
   {
     if(map->size != sizeAntiguo)
